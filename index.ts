@@ -26,7 +26,9 @@
 
 // console.log(isPalindrome(-121))
 
-var plusOne = function(digits: number[]) {
+// Plus One
+
+const plusOne = (digits: number[]): number[] => {
     for (let i = digits.length -1; i >= 0; i--) {
         const curDigit: number = digits[i];
         if (curDigit < 9) {
@@ -37,5 +39,3 @@ var plusOne = function(digits: number[]) {
     }
     return [1, ...digits];
 };
-
-console.log(plusOne([2,3,4]))
